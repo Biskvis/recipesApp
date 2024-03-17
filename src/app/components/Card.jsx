@@ -13,9 +13,7 @@ export default function Card() {
             UI/UX Review Check
             </h5>
             <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-            The place is close to Barceloneta Beach and bus stop just 2 min by walk
-            and near to "Naviglio" where you can enjoy the main night life in
-            Barcelona.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio nam quasi molestiae nisi repudiandae, magni beatae, in esse animi dolores doloribus ut a maxime illo voluptatum numquam voluptas eum.
             </p>
         </div>
         <div className="p-6 pt-0">

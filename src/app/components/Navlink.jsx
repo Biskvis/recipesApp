@@ -1,20 +1,25 @@
 'use client';
 
-import React from "react"
+import { Suspense } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import Search from './Search.jsx'
 
 export default function Navlink() {
     const pathname = usePathname();
 
+
     return(
-        <div className="flex m-auto gap-4 p-4 w-6/12 bg-yellow-600 rounded-lg max-w-screen-lg mt-2.5 ">
+        <div className="flex m-auto gap-4 p-4 w-6/12 bg-yellow-600 rounded-lg min-w-max max-w-screen-lg mt-2.5 ">
             <Link href='/'>
                 <h2 className="font-sans text-xl font-semibold cursor-pointer">Recipes</h2>
             </Link>
-            <input type="text" placeholder="Search..." className="rounded-lg text-center mr-auto" />
+            <Suspense>
+                <Search />
+            </Suspense>
+            
 
             <Link
                 href="/"

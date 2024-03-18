@@ -1,6 +1,10 @@
 
 export default function Page() {
     return (
-        <h2>About</h2>
+        <main className="p-4">
+            
+                <p className="text-center">This page was created for educational purposes.</p>
+            
+        </main>
     )
 }

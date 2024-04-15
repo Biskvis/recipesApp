@@ -13,8 +13,8 @@ export default function Page({ searchParams }) {
     const query = searchParams.query || '';
 
     return (
-        <div className='flex flex-col justify-center items-center'>
-            <div className='p-8 flex flex-col justify-center items-center max-w-screen-xl'>
+        <div className='md:flex flex-col justify-center items-center'>
+            <div className='p-8 md:flex flex-col justify-center items-center max-w-screen-xl'>
                 <Cards data={data} query={query} />
                 
             </div>

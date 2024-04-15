@@ -24,7 +24,7 @@ export default function Search() {
         <input
             type="text"
             placeholder="Search..."
-            className="rounded-lg text-center mr-auto"
+            className="rounded-lg text-center mr-auto hidden md:block bg-white"
             onChange={(e) => {
                 handleSearch(e.target.value);
               }}

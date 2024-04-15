@@ -15,10 +15,10 @@ export default function Cards(props) {
         
     return (
         <>
-        <div className='flex flex-row p-8'>
+        <div className='grid place-content-center md:flex flex-row p-8'>
             {cardArray.slice(0,4)}
         </div>
-        <div className='flex flex-row p-8'>{cardArray.slice(4,8)}</div>
+        <div className='grid place-content-center md:flex flex-row p-8'>{cardArray.slice(4,8)}</div>
         </>
     );
 }

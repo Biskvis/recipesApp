@@ -11,15 +11,15 @@ export default function Card(props) {
     const instructions = props.body
     
     return(
-        <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 max-h-96">
+        <div className="relative flex flex-col mt-12 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 max-h-96">
         <div
             className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
             <Image
             src={`/${props.imgId}.jpg`}
             width={300}
             height={100}
-            style={{ width: "auto", height: "auto" }} 
-            className="hidden md:block"
+            style={{  height: "auto" }} 
+            className="w-[32rem]"
             alt="card-image"
           />
             

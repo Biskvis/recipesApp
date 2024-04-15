@@ -20,11 +20,11 @@ export default function Navlink() {
                 <Search />
             </Suspense>
             
-
+            
             <Link
                 href="/"
                 className={clsx(
-                    "hover:text-gray-200 cursor-pointer text-lg", 
+                    "hover:text-gray-200 cursor-pointer md:text-lg", 
                     {
                     "font-bold text-white": pathname === '/',
                 },
@@ -33,7 +33,7 @@ export default function Navlink() {
             <Link
                 href="/recipes"
                 className={clsx(
-                    "hover:text-gray-200 cursor-pointer text-lg", 
+                    "hover:text-gray-200 cursor-pointer md:text-lg", 
                     {
                     "font-bold text-white": pathname === '/recipes',
                 },
@@ -42,7 +42,7 @@ export default function Navlink() {
             <Link
              href='/about'
             className={clsx(
-                    "hover:text-gray-200 cursor-pointer text-lg", 
+                    "hover:text-gray-200 cursor-pointer md:text-lg", 
                     {
                     "font-bold text-white": pathname === '/about',
                 },
@@ -51,7 +51,7 @@ export default function Navlink() {
             <Link
                 href='/contact'
                 className={clsx(
-                    "hover:text-gray-200 cursor-pointer text-lg mr-auto", 
+                    "hover:text-gray-200 cursor-pointer md:text-lg mr-auto", 
                     {
                     "font-bold text-white": pathname === '/contact',
                 },
@@ -62,7 +62,7 @@ export default function Navlink() {
             src="/brownie.png"
             width={32}
             height={32}
-            className="hidden md:block"
+            className=""
             alt="Brownie icon"
           />
         </div>
